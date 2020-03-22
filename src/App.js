@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import ItemsList from "./components/ItemsList";
 import SingleItem from "./components/SingleItem";
 import CreateItem from "./components/createItem";
-import deleteItem from "./components/deleteItem";
+import DeleteItem from "./components/deleteItem";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/state" component={State} />
         <Route path="/category" component={Category} />
         <Route path="/createItem" component={CreateItem} />
-        <Route path="/deleteItem" component={deleteItem} />
+        <Route path="/deleteItem" component={DeleteItem} />
       </Switch>
     </React.Fragment>
   );
