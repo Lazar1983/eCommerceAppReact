@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './createItem.css';
 // import { Link } from "react-router-dom";
 
 export default class CreateItem extends React.Component {
@@ -51,7 +52,7 @@ export default class CreateItem extends React.Component {
 
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form className="container" onSubmit={this.handleSubmit}>
           <label>Title:<input type="text" name="this.state.title" value={this.state.title} onChange={this.handleTitle} /></label><br/>
           <label>Price:<input type="number" name="price" value={this.state.price} onChange={this.handlePrice} /></label><br/>
           <label>stateId:<input type="number" name="stateId" value={this.state.stateId} onChange={this.handleStateId} /></label><br/>
@@ -59,7 +60,7 @@ export default class CreateItem extends React.Component {
           <label>Stock:<input type="checkbox" name="stock" value={this.state.stock} onChange={this.handleStock} /></label><br/>
           <label>Picture:<input type="file" name="picture" value={this.state.picture} onChange={this.handlePicture} /></label>
           <button type='upload'>Upload</button><br/>
-          <label>description:<input type="textarea" name="description" value={this.state.description} onChange={this.handleDescription} /></label><br/>
+          <label>description:<textarea type="text" name="description" value={this.state.description} onChange={this.handleDescription} /></label><br/>
           <button type="submit">Add</button>
         </form>
       </div>
