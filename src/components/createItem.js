@@ -53,7 +53,8 @@ export default class CreateItem extends React.Component {
           <label>stateId:<input type="text" name="stateId" value={this.state.stateId} onChange={this.handleStateId} /></label><br/>
           <label>categoryId:<input type="text" name="categoryId" value={this.state.categoryId} onChange={this.handlecategoryId} /></label><br/>
           <label>Stock:<input type="text" name="stock" value={this.state.stock} onChange={this.handleStock} /></label><br/>
-          <label>Picture:<input type="text" name="picture" value={this.state.picture} onChange={this.handlePicture} /></label><br/>
+          <label>Picture:<input type="file" name="picture" value={this.state.picture} onChange={this.handlePicture} /></label>
+          <button type='upload'>Upload</button><br/>
           <label>description:<input type="text" name="description" value={this.state.description} onChange={this.handleDescription} /></label><br/>
           <button type="submit">Add</button>
         </form>
