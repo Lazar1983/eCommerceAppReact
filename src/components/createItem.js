@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
+// import { Link } from "react-router-dom";
 
-export default class createItem extends React.Component {
+export default class CreateItem extends React.Component {
   state = {
     product: '',
   }
@@ -32,17 +33,10 @@ export default class createItem extends React.Component {
             Title:
             <input type="text" name="product" onChange={this.handleChange} />
           </label>
-          <label>
-            Price:
-            <input type="number" onChange={this.handleChange} />
-          </label>
-          <label>
-            STOCK
-             
-          </label>
           <button type="submit">Add</button>
         </form>
       </div>
     )
   }
 }
+

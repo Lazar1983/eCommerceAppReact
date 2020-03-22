@@ -3,25 +3,21 @@ import axios from 'axios';
 
 export default class DeleteItem extends React.Component {
   state = {
-    product: '',
+    id: ''
   }
 
   handleChange = event => {
-    this.setState({ product: event.target.value });
+    this.setState({ id: event.target.value });
   }
 
   handleSubmit = event => {
     event.preventDefault();
 
-    const item = {
-      product: this.state.product
-    };
-
-    axios.post(`https://my-json-server.typicode.com/drakulovski/dbplaceholder/products/:id`, { item })
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      })
+  axios.delete(`https://my-json-server.typicode.com/drakulovski/dbplaceholder/products/${this.state.id}`)
+    .then(res => {
+      console.log(res);
+      console.log(res.data);
+    });
   }
 
   render() {

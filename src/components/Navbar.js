@@ -21,7 +21,7 @@ export default class Navbar extends React.Component {
         <Link to="/category">
           <button style={mystyle}>Category</button>
         </Link>
-        <Link to="/createItem">
+        <Link to="/CreateItem">
           <button style={mystyle}>Create Item</button>
         </Link>
         <Link to="/deleteItem">
