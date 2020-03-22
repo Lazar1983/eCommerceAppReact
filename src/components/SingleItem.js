@@ -7,15 +7,20 @@ function SingleItem() {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    axios.get("https://my-json-server.typicode.com/drakulovski/dbplaceholder/products")
+    axios
+      .get(
+        "https://my-json-server.typicode.com/drakulovski/dbplaceholder/products"
+      )
       .then(res => {
         console.log(res.data);
+
         let item = res.data.filter(item => {
-          return item.id === id;
+          return item.id == id;
         });
+
         setItem(item[0]);
       });
-  },);
+  }, []);
 
   return (
     <>

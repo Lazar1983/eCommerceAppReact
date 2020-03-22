@@ -53,13 +53,13 @@ export default class CreateItem extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label>Title:<input type="text" name="this.state.title" value={this.state.title} onChange={this.handleTitle} /></label><br/>
-          <label>Price:<input type="text" name="price" value={this.state.price} onChange={this.handlePrice} /></label><br/>
-          <label>stateId:<input type="text" name="stateId" value={this.state.stateId} onChange={this.handleStateId} /></label><br/>
-          <label>categoryId:<input type="text" name="categoryId" value={this.state.categoryId} onChange={this.handlecategoryId} /></label><br/>
+          <label>Price:<input type="number" name="price" value={this.state.price} onChange={this.handlePrice} /></label><br/>
+          <label>stateId:<input type="number" name="stateId" value={this.state.stateId} onChange={this.handleStateId} /></label><br/>
+          <label>categoryId:<input type="number" name="categoryId" value={this.state.categoryId} onChange={this.handlecategoryId} /></label><br/>
           <label>Stock:<input type="checkbox" name="stock" value={this.state.stock} onChange={this.handleStock} /></label><br/>
           <label>Picture:<input type="file" name="picture" value={this.state.picture} onChange={this.handlePicture} /></label>
           <button type='upload'>Upload</button><br/>
-          <label>description:<input type="text" name="description" value={this.state.description} onChange={this.handleDescription} /></label><br/>
+          <label>description:<input type="textarea" name="description" value={this.state.description} onChange={this.handleDescription} /></label><br/>
           <button type="submit">Add</button>
         </form>
       </div>

@@ -6,7 +6,7 @@ import Category from "./components/Category";
 import State from "./components/State";
 import Navbar from './components/Navbar';
 import ItemsList from "./components/ItemsList";
-import SingleItem from "./components/SingleItem";
+import SingleItem from "./components/singleItem";
 import CreateItem from "./components/createItem";
 import DeleteItem from "./components/deleteItem";
 
