@@ -5,6 +5,7 @@ import axios from 'axios';
 export default class CreateItem extends React.Component {
   state = {
     product: '',
+    
   }
 
   handleChange = event => {
@@ -18,7 +19,11 @@ export default class CreateItem extends React.Component {
       product: this.state.product
     };
 
-    axios.post(`https://my-json-server.typicode.com/drakulovski/dbplaceholder/products`, { item })
+    axios.post(`https://my-json-server.typicode.com/drakulovski/dbplaceholder/products`, { 
+      item,
+
+      
+    })
       .then(res => {
         console.log(res);
         console.log(res.data);
