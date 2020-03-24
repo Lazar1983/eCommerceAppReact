@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-export default class State extends React.Component {
+export default class Category extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,7 +17,7 @@ export default class State extends React.Component {
   }
 
   render() {
-    const stateList = this.state.categories.map((item) =>
+    const categoryList = this.state.categories.map((item) =>
       <div className="name" key={item.id}>
         <div className="itemName">
             <div className="item">
@@ -31,7 +31,7 @@ export default class State extends React.Component {
     );
     return (
       <div>
-        <ul>{stateList}</ul>
+        <ul>{categoryList}</ul>
       </div>
     );
   
